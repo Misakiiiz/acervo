@@ -42,6 +42,12 @@ select:focus,input:focus{border-color:var(--accent)}
 .empty{color:var(--muted);text-align:center;margin-top:60px}
 .modal{position:fixed;inset:0;background:rgba(5,4,8,.75);display:none;align-items:flex-start;justify-content:center;overflow:auto;padding:40px 16px;z-index:10}
 .modal.active{display:flex}
+.modal-nav{position:fixed;top:50%;z-index:11;width:48px;height:48px;border:1px solid var(--line);border-radius:50%;background:var(--panel);color:var(--accent);font-size:32px;line-height:1;cursor:pointer;transform:translateY(-50%);transition:background .2s,border-color .2s}
+.modal-nav:hover:not(:disabled){background:var(--card);border-color:var(--accent)}
+.modal-nav:disabled{opacity:.35;cursor:not-allowed}
+.modal-nav[hidden]{display:none}
+.modal-nav.prev{left:24px}
+.modal-nav.next{right:24px}
 .modal-box{position:relative;background:var(--panel);border:1px solid var(--line);border-radius:16px;width:100%;max-width:560px;padding:28px;display:flex;flex-direction:column;gap:14px}
 .close{position:absolute;top:14px;right:14px;background:none;border:0;color:var(--muted);font-size:18px;cursor:pointer}
 .m-head h2{font:600 22px/1.25 Cinzel,serif;padding-right:28px}
@@ -67,4 +73,5 @@ select:focus,input:focus{border-color:var(--accent)}
  .sidebar.open{transform:none}
  .menu-btn{display:block}.content{padding:16px}
  .m-info{grid-template-columns:1fr}
+ .modal-nav{display:none}
 }

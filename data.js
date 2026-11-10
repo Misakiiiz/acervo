@@ -496,7 +496,7 @@ const aus = [
   "status": "Em andamento",
   "size": "Long",
   "cover": "",
-  "description": "",
+  "description": "Esse post não está disponível no embed, mas você pode acessar o conteúdo completo clicando no link. Motivo: O X marca esse post como conteúdo adulto e exige login para mostrá-lo.",
   "tags": [
    "Long"
   ],
@@ -925,7 +925,7 @@ const aus = [
    "display": "@wenclairfield"
   },
   "fandom": "Wenclair",
-  "status": "Não informado",
+  "status": "Concluída",
   "size": "",
   "cover": "",
   "description": "",
@@ -941,7 +941,7 @@ const aus = [
    "display": "@wenclairfield"
   },
   "fandom": "Wenclair",
-  "status": "Não informado",
+  "status": "Concluída",
   "size": "",
   "cover": "",
   "description": "",
@@ -1023,7 +1023,7 @@ const aus = [
    "display": "@wenclairfield"
   },
   "fandom": "Wenclair",
-  "status": "Não informado",
+  "status": "Concluída",
   "size": "",
   "cover": "",
   "description": "",
@@ -1121,7 +1121,7 @@ const aus = [
    "display": "@rantdobie"
   },
   "fandom": "Wenclair",
-  "status": "Não informado",
+  "status": "Concluída",
   "size": "",
   "cover": "",
   "description": "",
@@ -1319,7 +1319,7 @@ const aus = [
    "display": "@vampzjenna"
   },
   "fandom": "Wenclair",
-  "status": "Não informado",
+  "status": "Concluída",
   "size": "One-shot",
   "cover": "",
   "description": "",
@@ -1571,7 +1571,7 @@ const aus = [
    "display": "@maviebaker"
   },
   "fandom": "SweetCC",
-  "status": "Não informado",
+  "status": "Concluída",
   "size": "One-shot",
   "cover": "",
   "description": "",
@@ -1580,5 +1580,595 @@ const aus = [
   ],
   "tweet": "2113875447985418475",
   "url": "https://x.com/maviebaker/status/2113875447985418475"
+ },
+ {
+  "id": 93,
+  "title": "I Could be a better boyfriend",
+  "author": {
+   "name": "agloveswencl4ir",
+   "display": "@agloveswencl4ir"
+  },
+  "fandom": "Wenclair",
+  "status": "Concluída",
+  "size": "One-shot",
+  "cover": "",
+  "description": "",
+  "tags": [
+   "One-shot"
+  ],
+  "tweet": "2038326554829230309",
+  "url": "https://x.com/agloveswencl4ir/status/2038326554829230309"
+ },
+ {
+  "id": 94,
+  "title": "sorteio de galo",
+  "author": {
+   "name": "agloveswencl4ir",
+   "display": "@agloveswencl4ir"
+  },
+  "fandom": "SweetCC",
+  "status": "Concluída",
+  "size": "One-shot",
+  "cover": "",
+  "description": "",
+  "tags": [
+   "One-shot"
+  ],
+  "tweet": "2043006522154734055",
+  "url": "https://x.com/agloveswencl4ir/status/2043006522154734055"
+ },
+ {
+  "id": 95,
+  "title": "Eu queria nunca ter te conhecido",
+  "author": {
+   "name": "agloveswencl4ir",
+   "display": "@agloveswencl4ir"
+  },
+  "fandom": "SweetCC",
+  "status": "Concluída",
+  "size": "One-shot",
+  "cover": "",
+  "description": "",
+  "tags": [
+   "One-shot"
+  ],
+  "tweet": "2049685881330541047",
+  "url": "https://x.com/agloveswencl4ir/status/2049685881330541047"
+ },
+ {
+  "id": 96,
+  "title": "Seven Minutes in Heaven",
+  "author": {
+   "name": "crfortegay e agloveswencl4ir",
+   "display": "@crfortegay e @agloveswencl4ir"
+  },
+  "fandom": "Wenclair",
+  "status": "Concluída",
+  "size": "One-shot",
+  "cover": "",
+  "description": "Feita por crfortegay e agloveswencl4ir.",
+  "tags": [
+   "One-shot"
+  ],
+  "tweet": "2048229725999394823",
+  "url": "https://x.com/crfortegay/status/2048229725999394823"
+ },
+ {
+  "id": 97,
+  "title": "How come we never even dated",
+  "author": {
+   "name": "agloveswencl4ir",
+   "display": "@agloveswencl4ir"
+  },
+  "fandom": "Wenclair",
+  "status": "Concluída",
+  "size": "One-shot",
+  "cover": "",
+  "description": "",
+  "tags": [
+   "One-shot"
+  ],
+  "tweet": "2063641777941131562",
+  "url": "https://x.com/agloveswencl4ir/status/2063641777941131562"
+ },
+ {
+  "id": 98,
+  "title": "Chuva depois do arco-iris",
+  "author": {
+   "name": "agloveswencl4ir",
+   "display": "@agloveswencl4ir"
+  },
+  "fandom": "Wenclair",
+  "status": "Concluída",
+  "size": "One-shot",
+  "cover": "",
+  "description": "",
+  "tags": [
+   "One-shot"
+  ],
+  "tweet": "2064001563778072718",
+  "url": "https://x.com/agloveswencl4ir/status/2064001563778072718"
+ },
+ {
+  "id": 99,
+  "title": "Assalto",
+  "author": {
+   "name": "agloveswencl4ir",
+   "display": "@agloveswencl4ir"
+  },
+  "fandom": "SweetCC",
+  "status": "Concluída",
+  "size": "One-shot",
+  "cover": "",
+  "description": "",
+  "tags": [
+   "One-shot"
+  ],
+  "tweet": "2076472129353060616",
+  "url": "https://x.com/agloveswencl4ir/status/2076472129353060616"
+ },
+ {
+  "id": 100,
+  "title": "Stupid Dream Girl",
+  "author": {
+   "name": "agloveswencl4ir e Lollipop_Raven",
+   "display": "@agloveswencl4ir e @Lollipop_Raven"
+  },
+  "fandom": "Wenclair",
+  "status": "Concluída",
+  "size": "One-shot",
+  "cover": "",
+  "description": "Feita por agloveswencl4ir e Lollipop_Raven.",
+  "tags": [
+   "One-shot"
+  ],
+  "tweet": "2079204639870726399",
+  "url": "https://x.com/agloveswencl4ir/status/2079204639870726399"
+ },
+ {
+  "id": 101,
+  "title": "Ghosts of Christmas Eve",
+  "author": {
+   "name": "agloveswencl4ir",
+   "display": "@agloveswencl4ir"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Short",
+  "cover": "",
+  "description": "Mini AU.",
+  "tags": [
+   "Short"
+  ],
+  "tweet": "1998797216513982860",
+  "url": "https://x.com/agloveswencl4ir/status/1998797216513982860"
+ },
+ {
+  "id": 102,
+  "title": "unexpectedly, it was you",
+  "author": {
+   "name": "agloveswencl4ir",
+   "display": "@agloveswencl4ir"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Short",
+  "cover": "",
+  "description": "Mini AU.",
+  "tags": [
+   "Short"
+  ],
+  "tweet": "2080304699534614702",
+  "url": "https://x.com/agloveswencl4ir/status/2080304699534614702"
+ },
+ {
+  "id": 103,
+  "title": "Ice Cream Crush",
+  "author": {
+   "name": "wenclairfield",
+   "display": "@wenclairfield"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Short",
+  "cover": "",
+  "description": "Mini AU.",
+  "tags": [
+   "Short"
+  ],
+  "tweet": "2096726441027043402",
+  "url": "https://x.com/wenclairfield/status/2096726441027043402"
+ },
+ {
+  "id": 104,
+  "title": "SUPER",
+  "author": {
+   "name": "boogameboy",
+   "display": "@boogameboy"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Short",
+  "cover": "",
+  "description": "Mini AU.",
+  "tags": [
+   "Short"
+  ],
+  "tweet": "1978221354764620231",
+  "url": "https://x.com/boogameboy/status/1978221354764620231"
+ },
+ {
+  "id": 105,
+  "title": "closer to you",
+  "author": {
+   "name": "myersnrth",
+   "display": "@myersnrth"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1700600773191545165",
+  "url": "https://x.com/myersnrth/status/1700600773191545165"
+ },
+ {
+  "id": 106,
+  "title": "Gold Rush",
+  "author": {
+   "name": "ortegawsx",
+   "display": "@ortegawsx"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1822709465436897623",
+  "url": "https://x.com/ortegawsx/status/1822709465436897623"
+ },
+ {
+  "id": 107,
+  "title": "Casal Addams",
+  "author": {
+   "name": "Tyler_Hannukie",
+   "display": "@Tyler_Hannukie"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1636478090049200128",
+  "url": "https://x.com/Tyler_Hannukie/status/1636478090049200128"
+ },
+ {
+  "id": 108,
+  "title": "Mermaids",
+  "author": {
+   "name": "editswenclair",
+   "display": "@editswenclair"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1626735935063826433",
+  "url": "https://x.com/editswenclair/status/1626735935063826433"
+ },
+ {
+  "id": 109,
+  "title": "somebody i f*cked once.",
+  "author": {
+   "name": "ftlaur",
+   "display": "@ftlaur"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1703783338836693502",
+  "url": "https://x.com/ftlaur/status/1703783338836693502"
+ },
+ {
+  "id": 110,
+  "title": "Like Evelyn Hugo",
+  "author": {
+   "name": "bookwormboyy",
+   "display": "@bookwormboyy"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1613687861726920704",
+  "url": "https://x.com/bookwormboyy/status/1613687861726920704"
+ },
+ {
+  "id": 111,
+  "title": "CATS",
+  "author": {
+   "name": "naalish_",
+   "display": "@naalish_"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1686440756746080321",
+  "url": "https://x.com/naalish_/status/1686440756746080321"
+ },
+ {
+  "id": 112,
+  "title": "The decoy girlfriend",
+  "author": {
+   "name": "writtenby_mari",
+   "display": "@writtenby_mari"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1686045430356819968",
+  "url": "https://x.com/writtenby_mari/status/1686045430356819968"
+ },
+ {
+  "id": 113,
+  "title": "Pirat's Of Caribe",
+  "author": {
+   "name": "lovesmyers",
+   "display": "@lovesmyers"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1638745730939764737",
+  "url": "https://x.com/lovesmyers/status/1638745730939764737"
+ },
+ {
+  "id": 114,
+  "title": "Style",
+  "author": {
+   "name": "zoreladdams",
+   "display": "@zoreladdams"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1641593869551763457",
+  "url": "https://x.com/zoreladdams/status/1641593869551763457"
+ },
+ {
+  "id": 115,
+  "title": "Figure you out",
+  "author": {
+   "name": "bookwormboyy",
+   "display": "@bookwormboyy"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1628801799124656129",
+  "url": "https://x.com/bookwormboyy/status/1628801799124656129"
+ },
+ {
+  "id": 116,
+  "title": "my dear secretary",
+  "author": {
+   "name": "zor7l",
+   "display": "@zor7l"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Short",
+  "cover": "",
+  "description": "Mini AU.",
+  "tags": [
+   "Short"
+  ],
+  "tweet": "1983506528289083629",
+  "url": "https://x.com/zor7l/status/1983506528289083629"
+ },
+ {
+  "id": 117,
+  "title": "the baby",
+  "author": {
+   "name": "jnsiclr",
+   "display": "@jnsiclr"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1660366840395182087",
+  "url": "https://x.com/jnsiclr/status/1660366840395182087"
+ },
+ {
+  "id": 118,
+  "title": "us, again",
+  "author": {
+   "name": "pyramidsfk",
+   "display": "@pyramidsfk"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1982931437876899967",
+  "url": "https://x.com/pyramidsfk/status/1982931437876899967"
+ },
+ {
+  "id": 119,
+  "title": "A voz do silêncio",
+  "author": {
+   "name": "jaursexx",
+   "display": "@jaursexx"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1657509479896821761",
+  "url": "https://x.com/jaursexx/status/1657509479896821761"
+ },
+ {
+  "id": 120,
+  "title": "Atrito.",
+  "author": {
+   "name": "Softie_mrn",
+   "display": "@Softie_mrn"
+  },
+  "fandom": "SweetCC",
+  "status": "Não informado",
+  "size": "Short",
+  "cover": "",
+  "description": "Mini AU.",
+  "tags": [
+   "Short"
+  ],
+  "tweet": "2019431904643281374",
+  "url": "https://x.com/Softie_mrn/status/2019431904643281374"
+ },
+ {
+  "id": 121,
+  "title": "fios do destino",
+  "author": {
+   "name": "sadiewifey",
+   "display": "@sadiewifey"
+  },
+  "fandom": "Wenclair/SweetCC",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1976983115685150891",
+  "url": "https://x.com/sadiewifey/status/1976983115685150891"
+ },
+ {
+  "id": 122,
+  "title": "Afterglow",
+  "author": {
+   "name": "mooninverso",
+   "display": "@mooninverso"
+  },
+  "fandom": "SweetCC",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1968443154455052686",
+  "url": "https://x.com/mooninverso/status/1968443154455052686"
+ },
+ {
+  "id": 123,
+  "title": "mini au",
+  "author": {
+   "name": "omnomclara",
+   "display": "@omnomclara"
+  },
+  "fandom": "SweetCC",
+  "status": "Não informado",
+  "size": "Short",
+  "cover": "",
+  "description": "CC é estagiária em uma grande empresa de marketing, mas sua chefe, Cairo, torna sua vida difícil e a faz buscá-la em outra cidade depois do horário.",
+  "tags": [
+   "Short"
+  ],
+  "tweet": "1983931866424946796",
+  "url": "https://x.com/omnomclara/status/1983931866424946796"
+ },
+ {
+  "id": 124,
+  "title": "Cold-Hearted Girl",
+  "author": {
+   "name": "Lollipop_Raven",
+   "display": "@Lollipop_Raven"
+  },
+  "fandom": "SweetCC",
+  "status": "Em andamento",
+  "size": "Long",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "2064032180871852461",
+  "url": "https://x.com/Lollipop_Raven/status/2064032180871852461"
+ },
+ {
+  "id": 125,
+  "title": "When Did You Get Hot?",
+  "author": {
+   "name": "hellgrlghotz",
+   "display": "@hellgrlghotz"
+  },
+  "fandom": "SweetCC",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "2072117794049605966",
+  "url": "https://x.com/hellgrlghotz/status/2072117794049605966"
+ },
+ {
+  "id": 126,
+  "title": "The Devil Wears Chanel",
+  "author": {
+   "name": "jennafiIms",
+   "display": "@jennafiIms"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1611472291334098944",
+  "url": "https://x.com/jennafiIms/status/1611472291334098944"
+ },
+ {
+  "id": 127,
+  "title": "ᥣιfᥱ ιs Strᥲᥒgᥱ",
+  "author": {
+   "name": "Maryccmelo",
+   "display": "@Maryccmelo"
+  },
+  "fandom": "Wenclair",
+  "status": "Não informado",
+  "size": "Não informado",
+  "cover": "",
+  "description": "",
+  "tags": [],
+  "tweet": "1801978070716366933",
+  "url": "https://x.com/Maryccmelo/status/1801978070716366933"
  }
 ];

@@ -29,5 +29,11 @@ function renderCards(list){
 
 cardsContainer.addEventListener("click", e => {
     const card = e.target.closest(".card");
-    if (card) openModal(aus.find(a => a.id === Number(card.dataset.id)));
+    if (card) {
+        const selectedAu = aus.find(a => a.id === Number(card.dataset.id));
+        const visibleAus = [...cardsContainer.querySelectorAll(".card")]
+            .map(item => aus.find(a => a.id === Number(item.dataset.id)))
+            .filter(Boolean);
+        if (selectedAu) openModal(selectedAu, visibleAus);
+    }
 });
