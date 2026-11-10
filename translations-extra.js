@@ -12,9 +12,15 @@ const EXTRA_TRANSLATIONS = {
     "nav.completed": "Complété",
     "filter.ship": "Bateau",
     "filter.author": "Auteur",
+    "filter.authorPlaceholder": "Saisissez pour rechercher...",
     "filter.publication": "Publication",
     "filter.size": "Longueur",
     "filter.trope": "Trope",
+    "sort.label": "Trier par",
+    "sort.default": "Ordre d'origine",
+    "sort.title": "Titre (A–Z)",
+    "sort.completion": "Ordre d'achèvement",
+    "sort.author": "Auteur (A–Z)",
     "filter.all": "Tous",
     "status.ongoing": "En cours",
     "status.completed": "Complété",
@@ -88,7 +94,10 @@ const EXTRA_TRANSLATIONS = {
     "about.imageAlt": "Illustration de Wenclair",
     "fanfics.construction": "En cours de construction",
     "fanfics.title": "Archives de fanfictions",
-    "fanfics.description": "Nous préparons un lieu spécial pour recueillir encore plus d'histoires. Revenez bientôt! ♡"
+    "fanfics.description": "Nous préparons un lieu spécial pour recueillir encore plus d'histoires. Revenez bientôt! ♡",
+    "fanfics.recommendationsTitle": "En attendant, profitez de quelques recommandations :",
+    "fanfics.readWattpad": "Lire sur Wattpad ↗",
+    "fanfics.closeDetails": "Fermer les détails"
   },
   "it": {
     "page.aboutTitle": "Informazioni su | Archivio JemmaVerso",
@@ -104,6 +113,7 @@ const EXTRA_TRANSLATIONS = {
     "page.homeTitle": "Archivio JemmaVerso",
     "page.fanficsTitle": "Archivio fanfiction | Archivio JemmaVerso",
     "filter.author": "Autore",
+    "filter.authorPlaceholder": "Digita per cercare...",
     "filter.ship": "Nave",
     "filter.size": "Lunghezza",
     "filter.publication": "Pubblicazione",
@@ -179,7 +189,15 @@ const EXTRA_TRANSLATIONS = {
     "about.withLove": "Con amore,",
     "fanfics.title": "Archivio fanfiction",
     "about.imageAlt": "Illustrazione di Wenclair",
-    "fanfics.description": "Stiamo preparando un posto speciale per raccogliere ancora più storie. Torna presto! ♡"
+    "fanfics.description": "Stiamo preparando un posto speciale per raccogliere ancora più storie. Torna presto! ♡",
+    "fanfics.recommendationsTitle": "Nel frattempo, approfitta di alcuni consigli:",
+    "fanfics.readWattpad": "Leggi su Wattpad ↗",
+    "fanfics.closeDetails": "Chiudi dettagli",
+    "sort.label": "Ordina per",
+    "sort.default": "Ordine originale",
+    "sort.title": "Titolo (A–Z)",
+    "sort.completion": "Ordine di completamento",
+    "sort.author": "Autore (A–Z)"
   }
 };
 

@@ -26,7 +26,7 @@
 
   <div class="side-filters">
     <label><span data-i18n="filter.ship">Ship</span><select id="fandom"><option value="" data-i18n="filter.all">Todos</option></select></label>
-    <label><span data-i18n="filter.author">Autor</span><select id="authorFilter"><option value="" data-i18n="filter.all">Todos</option></select></label>
+    <label><span data-i18n="filter.author">Autor</span><input id="authorFilter" type="text" list="authorOptions" autocomplete="off" placeholder="Digite para pesquisar..." data-i18n-placeholder="filter.authorPlaceholder"><datalist id="authorOptions"></datalist></label>
     <label><span data-i18n="filter.publication">Andamento</span>
       <select id="pubStatus">
         <option value="" data-i18n="filter.all">Todos</option>
@@ -45,6 +45,14 @@
       <select id="tropeFilter"><option value="" data-i18n="filter.all">Todos</option></select>
     </label>
     <button id="clearFilters" class="link-btn" data-i18n="filter.clear">Limpar filtros</button>
+    <label class="sort-control"><span data-i18n="sort.label">Ordenar por</span>
+      <select id="sortOrder">
+        <option value="" data-i18n="sort.default">Ordem original</option>
+        <option value="title" data-i18n="sort.title">Título (A–Z)</option>
+        <option value="completion" data-i18n="sort.completion">Conclusão</option>
+        <option value="author" data-i18n="sort.author">Autor (A–Z)</option>
+      </select>
+    </label>
   </div>
 
   <p class="side-stats"><span id="totalAuthors">0</span> <span data-i18n="archive.authors">autores no acervo</span></p>

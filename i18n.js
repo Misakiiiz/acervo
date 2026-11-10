@@ -17,9 +17,15 @@ const TRANSLATIONS = {
         "nav.unread": "Não lidas",
         "filter.ship": "Ship",
         "filter.author": "Autor",
+        "filter.authorPlaceholder": "Digite para pesquisar...",
         "filter.publication": "Andamento",
         "filter.size": "Tamanho",
         "filter.trope": "Trope",
+        "sort.label": "Ordenar por",
+        "sort.default": "Ordem original",
+        "sort.title": "Título (A–Z)",
+        "sort.completion": "Conclusão",
+        "sort.author": "Autor (A–Z)",
         "filter.all": "Todos",
         "filter.clear": "Limpar filtros",
         "status.ongoing": "Em andamento",
@@ -89,7 +95,10 @@ const TRANSLATIONS = {
         "about.imageAlt": "Ilustração de Wenclair",
         "fanfics.title": "Acervo de fanfics",
         "fanfics.construction": "Em construção",
-        "fanfics.description": "Estamos preparando um cantinho especial para reunir ainda mais histórias. Volte em breve! ♡"
+        "fanfics.description": "Estamos preparando um cantinho especial para reunir ainda mais histórias. Volte em breve! ♡",
+        "fanfics.recommendationsTitle": "Enquanto você espera, aproveite algumas recomendações:",
+        "fanfics.readWattpad": "Ler no Wattpad ↗",
+        "fanfics.closeDetails": "Fechar detalhes"
     },
     en: {
         "page.homeTitle": "JemmaVerso Archive",
@@ -108,9 +117,15 @@ const TRANSLATIONS = {
         "nav.unread": "Unread",
         "filter.ship": "Ship",
         "filter.author": "Author",
+        "filter.authorPlaceholder": "Type to search...",
         "filter.publication": "Publication",
         "filter.size": "Length",
         "filter.trope": "Trope",
+        "sort.label": "Sort by",
+        "sort.default": "Original order",
+        "sort.title": "Title (A–Z)",
+        "sort.completion": "Completion order",
+        "sort.author": "Author (A–Z)",
         "filter.all": "All",
         "filter.clear": "Clear filters",
         "status.ongoing": "Ongoing",
@@ -180,7 +195,10 @@ const TRANSLATIONS = {
         "about.imageAlt": "Wenclair illustration",
         "fanfics.title": "Fanfiction archive",
         "fanfics.construction": "Under construction",
-        "fanfics.description": "We're preparing a special place to gather even more stories. Come back soon! ♡"
+        "fanfics.description": "We're preparing a special place to gather even more stories. Come back soon! ♡",
+        "fanfics.recommendationsTitle": "While you wait, enjoy some recommendations:",
+        "fanfics.readWattpad": "Read on Wattpad ↗",
+        "fanfics.closeDetails": "Close details"
     },
     es: {
         "page.homeTitle": "JemmaVerso Archive",
@@ -199,9 +217,15 @@ const TRANSLATIONS = {
         "nav.unread": "Sin leer",
         "filter.ship": "Ship",
         "filter.author": "Autor",
+        "filter.authorPlaceholder": "Escribe para buscar...",
         "filter.publication": "Estado",
         "filter.size": "Extensión",
         "filter.trope": "Trope",
+        "sort.label": "Ordenar por",
+        "sort.default": "Orden original",
+        "sort.title": "Título (A–Z)",
+        "sort.completion": "Orden de finalización",
+        "sort.author": "Autor (A–Z)",
         "filter.all": "Todos",
         "filter.clear": "Limpiar filtros",
         "status.ongoing": "En curso",
@@ -271,7 +295,10 @@ const TRANSLATIONS = {
         "about.imageAlt": "Ilustración de Wenclair",
         "fanfics.title": "Archivo de fanfics",
         "fanfics.construction": "En construcción",
-        "fanfics.description": "Estamos preparando un espacio especial para reunir aún más historias. ¡Vuelve pronto! ♡"
+        "fanfics.description": "Estamos preparando un espacio especial para reunir aún más historias. ¡Vuelve pronto! ♡",
+        "fanfics.recommendationsTitle": "Mientras esperas, disfruta de algunas recomendaciones:",
+        "fanfics.readWattpad": "Leer en Wattpad ↗",
+        "fanfics.closeDetails": "Cerrar detalles"
     }
 };
 

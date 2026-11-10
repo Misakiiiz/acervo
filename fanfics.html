@@ -27,7 +27,26 @@
       <a class="construction-back" href="index.html" data-i18n="common.backHome">← Voltar ao acervo</a>
     </div>
   </section>
+  <section class="fanfic-recommendations" aria-labelledby="recommendationsTitle">
+    <h2 id="recommendationsTitle" data-i18n="fanfics.recommendationsTitle">Enquanto você espera, aproveite algumas recomendações:</h2>
+    <div id="fanficRecommendations" class="fanfic-cards"></div>
+  </section>
 </main>
+<dialog id="fanficDialog" class="fanfic-dialog" aria-labelledby="fanficDialogTitle">
+  <div class="fanfic-dialog-box">
+    <button id="closeFanficDialog" class="close" type="button" aria-label="Fechar detalhes" data-i18n-aria-label="fanfics.closeDetails">✕</button>
+    <img id="fanficDialogCover" class="fanfic-dialog-cover" alt="">
+    <div class="fanfic-dialog-copy">
+      <a id="fanficDialogAuthor" class="author fanfic-author" target="_blank" rel="noopener noreferrer"></a>
+      <h2 id="fanficDialogTitle"></h2>
+      <h3 data-i18n="modal.synopsis">Sinopse</h3>
+      <p id="fanficDialogDescription" class="fanfic-dialog-description"></p>
+      <a id="fanficDialogLink" class="read-btn" target="_blank" rel="noopener noreferrer" data-i18n="fanfics.readWattpad">Ler no Wattpad ↗</a>
+    </div>
+  </div>
+</dialog>
+<script src="fanfics-data.js"></script>
+<script src="fanfics.js"></script>
 <script src="translations-extra.js"></script>
 <script src="i18n.js"></script>
 <script src="sparkles.js"></script>
