@@ -1,5 +1,53 @@
 const EXTRA_TRANSLATIONS = {
   "fr": {
+    "theme.name.default": "Par défaut",
+    "theme.name.dark": "Par défaut sombre",
+    "theme.name.light": "Par défaut clair",
+    "theme.season.natal": "Saison : Noël",
+    "theme.season.halloween": "Saison : Halloween",
+    "theme.season.pascoa": "Saison : Pâques",
+    "theme.season.carnaval": "Saison : Carnaval",
+    "theme.season.anonovo": "Saison : Nouvel An",
+    "theme.season.muertos": "Saison : Jour des morts",
+    "status.hiatus": "En pause",
+    "status.dropped": "Abandonnée",
+    "archive.stats": "✦ Statistiques",
+    "footer.made": "fait par Raven",
+    "theme.label": "Thème",
+    "filter.tag": "Mon étiquette",
+    "tag.reler": "À relire",
+    "tag.madrugada": "Lecture nocturne",
+    "tag.comfort": "Réconfort",
+    "tag.chorar": "À faire pleurer",
+    "tags.title": "Mes étiquettes",
+    "surprise.btn": "Surprenez-moi",
+    "surprise.title": "Surprenez-moi",
+    "surprise.random": "Aléatoire (toute AU de l'archive)",
+    "surprise.filtered": "Utiliser mes filtres actifs",
+    "surprise.draw": "Tirer au sort",
+    "surprise.again": "En tirer une autre",
+    "surprise.details": "Voir les détails",
+    "surprise.none": "Aucune AU disponible avec ces filtres.",
+    "aod.label": "✦ AU du jour",
+    "aod.open": "Voir les détails",
+    "aod.hide": "Masquer l'AU du jour",
+    "aod.show": "Afficher l'AU du jour",
+    "stats.title": "Mes statistiques",
+    "stats.total": "AUs dans l'archive",
+    "stats.avg": "Note moyenne",
+    "stats.authors": "Auteurs",
+    "stats.progress": "Progression de lecture",
+    "stats.byShip": "Par couple",
+    "stats.byStatus": "Statut des AUs",
+    "stats.bySize": "Par longueur",
+    "stats.topAuthors": "Auteurs avec le plus d'AUs",
+    "stats.ratings": "Mes notes",
+    "stats.tags": "Mes étiquettes",
+    "stats.topRated": "Les mieux notées",
+    "stats.favs": "Favoris",
+    "stats.none": "Rien pour le moment.",
+    "stats.readOf": "lues",
+    "stats.read": "Lues",
     "common.home": "Maison",
     "page.aboutTitle": "À propos | Archives JemmaVerso",
     "common.closeMenu": "Fermer le menu",
@@ -10,12 +58,12 @@ const EXTRA_TRANSLATIONS = {
     "nav.reading": "En lisant",
     "nav.all": "Tous",
     "nav.completed": "Complété",
-    "filter.ship": "Bateau",
+    "filter.ship": "Couple",
     "filter.author": "Auteur",
     "filter.authorPlaceholder": "Saisissez pour rechercher...",
     "filter.publication": "Publication",
     "filter.size": "Longueur",
-    "filter.trope": "Trope",
+    "filter.trope": "Thème",
     "sort.label": "Trier par",
     "sort.default": "Ordre d'origine",
     "sort.title": "Titre (A–Z)",
@@ -49,7 +97,7 @@ const EXTRA_TRANSLATIONS = {
     "modal.read": "Lire la suite X ↗",
     "about.topics": "Sur cette page",
     "modal.readSite": "Lire sur place ↗",
-    "size.oneshot": "Un coup",
+    "size.oneshot": "Récit court",
     "about.topicContact": "Contact",
     "about.greeting": "Salut! Corbeau ici ! Bienvenue dans les archives JemmaVerso ! Tout d'abord, je voudrais remercier tous les auteurs qui font vivre cet univers et pour tout l'amour que vous mettez dans vos créations.",
     "about.topicProgress": "Progression de la lecture",
@@ -100,6 +148,54 @@ const EXTRA_TRANSLATIONS = {
     "fanfics.closeDetails": "Fermer les détails"
   },
   "it": {
+    "theme.name.default": "Predefinito",
+    "theme.name.dark": "Predefinito scuro",
+    "theme.name.light": "Predefinito chiaro",
+    "theme.season.natal": "Stagione: Natale",
+    "theme.season.halloween": "Stagione: Halloween",
+    "theme.season.pascoa": "Stagione: Pasqua",
+    "theme.season.carnaval": "Stagione: Carnevale",
+    "theme.season.anonovo": "Stagione: Capodanno",
+    "theme.season.muertos": "Stagione: Giorno dei Morti",
+    "status.hiatus": "In pausa",
+    "status.dropped": "Abbandonata",
+    "archive.stats": "✦ Statistiche",
+    "footer.made": "realizzato da Raven",
+    "theme.label": "Tema",
+    "filter.tag": "La mia etichetta",
+    "tag.reler": "Da rileggere",
+    "tag.madrugada": "Lettura notturna",
+    "tag.comfort": "Conforto",
+    "tag.chorar": "Da piangere",
+    "tags.title": "Le mie etichette",
+    "surprise.btn": "Sorprendimi",
+    "surprise.title": "Sorprendimi",
+    "surprise.random": "Casuale (qualsiasi AU dell'archivio)",
+    "surprise.filtered": "Usa i filtri attivi",
+    "surprise.draw": "Estrai",
+    "surprise.again": "Estrai un'altra",
+    "surprise.details": "Vedi i dettagli",
+    "surprise.none": "Nessuna AU disponibile con questi filtri.",
+    "aod.label": "✦ AU del giorno",
+    "aod.open": "Vedi i dettagli",
+    "aod.hide": "Nascondi l'AU del giorno",
+    "aod.show": "Mostra l'AU del giorno",
+    "stats.title": "Le mie statistiche",
+    "stats.total": "AU nell'archivio",
+    "stats.avg": "Valutazione media",
+    "stats.authors": "Autori",
+    "stats.progress": "Progresso di lettura",
+    "stats.byShip": "Per coppia",
+    "stats.byStatus": "Stato delle AU",
+    "stats.bySize": "Per lunghezza",
+    "stats.topAuthors": "Autori con più AU",
+    "stats.ratings": "Le mie valutazioni",
+    "stats.tags": "Le mie etichette",
+    "stats.topRated": "Le più apprezzate",
+    "stats.favs": "Preferite",
+    "stats.none": "Ancora nulla.",
+    "stats.readOf": "lette",
+    "stats.read": "Lette",
     "page.aboutTitle": "Informazioni su | Archivio JemmaVerso",
     "common.home": "Casa",
     "common.openMenu": "Apri il menu",
@@ -114,10 +210,10 @@ const EXTRA_TRANSLATIONS = {
     "page.fanficsTitle": "Archivio fanfiction | Archivio JemmaVerso",
     "filter.author": "Autore",
     "filter.authorPlaceholder": "Digita per cercare...",
-    "filter.ship": "Nave",
+    "filter.ship": "Coppia",
     "filter.size": "Lunghezza",
     "filter.publication": "Pubblicazione",
-    "filter.trope": "Tropo",
+    "filter.trope": "Tema",
     "status.ongoing": "In corso",
     "filter.all": "Tutto",
     "status.completed": "Completato",
@@ -143,7 +239,7 @@ const EXTRA_TRANSLATIONS = {
     "about.topics": "In questa pagina",
     "synopsisInPost": "La sinossi è nel post originale qui sotto.",
     "about.topicProgress": "Progresso della lettura",
-    "size.oneshot": "Un colpo solo",
+    "size.oneshot": "Racconto autoconclusivo",
     "about.topicConcept": "Cos'è JemmaVerso?",
     "about.topicContact": "Contatto",
     "noSynopsis": "Non è stata ancora aggiunta alcuna sinossi.",
@@ -1040,14 +1136,15 @@ EXTRA_TRANSLATIONS.fr["page.homeTitle"] = "JemmaVerso Archive";
 EXTRA_TRANSLATIONS.fr["page.aboutTitle"] = "À propos de JemmaVerso Archive";
 EXTRA_TRANSLATIONS.fr["page.fanficsTitle"] = "Archives de fanfictions | JemmaVerso Archive";
 EXTRA_TRANSLATIONS.fr["about.pageTitle"] = "⋆˖⁺‧₊☽ À propos de JemmaVerso Archive ☾₊‧⁺˖⋆";
-EXTRA_TRANSLATIONS.fr["filter.ship"] = "Ship";
+EXTRA_TRANSLATIONS.fr["filter.ship"] = "Couple";
+EXTRA_TRANSLATIONS.fr["filter.trope"] = "Thème";
 EXTRA_TRANSLATIONS.fr["archive.aus"] = "AUs";
 EXTRA_TRANSLATIONS.fr["nav.all"] = "Toutes";
 EXTRA_TRANSLATIONS.fr["nav.reading"] = "En cours de lecture";
 EXTRA_TRANSLATIONS.fr["nav.completed"] = "Terminées";
 EXTRA_TRANSLATIONS.fr["status.completed"] = "Terminée";
 EXTRA_TRANSLATIONS.fr["size.short"] = "Courte";
-EXTRA_TRANSLATIONS.fr["size.oneshot"] = "One-shot";
+EXTRA_TRANSLATIONS.fr["size.oneshot"] = "Récit court";
 EXTRA_TRANSLATIONS.fr["modal.read"] = "Lire sur X ↗";
 EXTRA_TRANSLATIONS.fr["modal.readSite"] = "Lire sur le site ↗";
 EXTRA_TRANSLATIONS.fr["about.greeting"] = "Salut, c'est Raven ! Bienvenue dans les archives JemmaVerso ! Tout d'abord, je voudrais remercier tous les auteurs qui font vivre cet univers et pour tout l'amour que vous mettez dans vos créations.";
@@ -1071,13 +1168,14 @@ EXTRA_TRANSLATIONS.it["page.homeTitle"] = "JemmaVerso Archive";
 EXTRA_TRANSLATIONS.it["page.aboutTitle"] = "Informazioni | JemmaVerso Archive";
 EXTRA_TRANSLATIONS.it["page.fanficsTitle"] = "Archivio di fanfiction | JemmaVerso Archive";
 EXTRA_TRANSLATIONS.it["about.pageTitle"] = "⋆˖⁺‧₊☽ Informazioni su JemmaVerso Archive ☾₊‧⁺˖⋆";
-EXTRA_TRANSLATIONS.it["filter.ship"] = "Ship";
+EXTRA_TRANSLATIONS.it["filter.ship"] = "Coppia";
+EXTRA_TRANSLATIONS.it["filter.trope"] = "Tema";
 EXTRA_TRANSLATIONS.it["archive.aus"] = "AUs";
 EXTRA_TRANSLATIONS.it["nav.all"] = "Tutte";
 EXTRA_TRANSLATIONS.it["nav.reading"] = "In lettura";
 EXTRA_TRANSLATIONS.it["nav.completed"] = "Completate";
 EXTRA_TRANSLATIONS.it["status.completed"] = "Completata";
-EXTRA_TRANSLATIONS.it["size.oneshot"] = "One-shot";
+EXTRA_TRANSLATIONS.it["size.oneshot"] = "Racconto autoconclusivo";
 EXTRA_TRANSLATIONS.it["modal.read"] = "Leggi su X ↗";
 EXTRA_TRANSLATIONS.it["modal.readSite"] = "Leggi sul sito ↗";
 EXTRA_TRANSLATIONS.it["about.greeting"] = "Ciao, sono Raven! Benvenuti nell'Archivio JemmaVerso! Innanzitutto, vorrei ringraziare ogni autore che mantiene vivo questo universo e per tutto l'affetto per le vostre creazioni.";

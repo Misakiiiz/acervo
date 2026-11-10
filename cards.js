@@ -3,7 +3,7 @@ const READ_LABEL = { naolido: "Não lida", lendo: "Lendo", pausada: "Pausada", l
 
 function esc(s){ return String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
 
-function statusClass(s){ return s === "Concluída" ? "done" : s === "Em andamento" ? "going" : "unk"; }
+function statusClass(s){ return {"Concluída":"done","Em andamento":"going","Em hiato":"hold","Abandonada":"drop"}[s] || "unk"; }
 
 function renderCards(list){
     cardsContainer.innerHTML = list.map(au => {

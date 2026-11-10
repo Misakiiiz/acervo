@@ -1,6 +1,6 @@
 const $ = id => document.getElementById(id);
 const searchInput = $("search"), fandomFilter = $("fandom"), authorFilter = $("authorFilter"),
-      pubStatus = $("pubStatus"), sizeFilter = $("sizeFilter"), sortOrder = $("sortOrder");
+      pubStatus = $("pubStatus"), sizeFilter = $("sizeFilter"), sortOrder = $("sortOrder"), tagFilter = $("tagFilter");
 let currentView = "";
 
 function fillSelect(select, values){
@@ -49,6 +49,7 @@ function filterAus(){
         if (pubStatus.value && au.status !== pubStatus.value) return false;
         if (sizeFilter.value && au.size !== sizeFilter.value) return false;
         if ($("tropeFilter").value && !(au.tags || []).includes($("tropeFilter").value)) return false;
+        if (tagFilter.value && !getAuTags(au.id).includes(tagFilter.value)) return false;
         if (currentView === "favorites") return isFavorite(au.id);
         if (currentView === "naolido") return (getReadingStatus(au.id) || "naolido") === "naolido";
         if (currentView) return getReadingStatus(au.id) === currentView;
@@ -58,7 +59,7 @@ function filterAus(){
 }
 
 [searchInput, authorFilter].forEach(el => el.addEventListener("input", filterAus));
-[fandomFilter, pubStatus, sizeFilter, $("tropeFilter"), sortOrder].forEach(el => el.addEventListener("change", filterAus));
+[fandomFilter, pubStatus, sizeFilter, $("tropeFilter"), sortOrder, tagFilter].forEach(el => el.addEventListener("change", filterAus));
 
 document.querySelectorAll(".nav button").forEach(btn => btn.addEventListener("click", () => {
     currentView = btn.dataset.view;
@@ -70,6 +71,6 @@ document.querySelectorAll(".nav button").forEach(btn => btn.addEventListener("cl
 $("clearFilters").addEventListener("click", () => {
     searchInput.value = "";
     authorFilter.value = "";
-    [fandomFilter, pubStatus, sizeFilter, $("tropeFilter")].forEach(s => s.value = "");
+    [fandomFilter, pubStatus, sizeFilter, $("tropeFilter"), tagFilter].forEach(s => s.value = "");
     filterAus();
 });
