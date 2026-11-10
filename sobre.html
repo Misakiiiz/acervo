@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sobre | JemmaVerso Archive</title>
+<title data-i18n="page.aboutTitle">Sobre | JemmaVerso Archive</title>
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,30 +12,98 @@
 </head>
 <body class="about-page">
 <main class="content">
-  <section class="about-content">
-    <h2>Sobre o JemmaVerso Archive</h2>
-    <p>Oiie! Raven aqui! Fico feliz que você tenha encontrado o nosso acervo!</p>
-    <p>Aqui é um espaço para descobrir histórias existentes e salvar seu progresso de leitura.</p>
-    <p>O acervo é atualizado constantemente, então não deixe de voltar para conferir as novidades!</p>
-    <h3>Sobre o progresso salvo.</h3>
-    <b>Como funciona:</b>
-    <p>O progresso de leitura é salvo localmente no seu navegador, então se você limpar o cache ou usar outro dispositivo, ele não será mantido.</p>
-    <p>Se você quiser salvar o progresso em outro dispositivo, você pode exportar os dados do seu progresso e importá-los em outro dispositivo.</p>
-    <p>Para exportar, clique no botão "Exportar progresso" na barra lateral. Para importar, clique no botão "Importar progresso" e selecione o arquivo exportado.</p>
-    <p>O arquivo exportado é um arquivo JSON que contém o seu progresso de leitura. Ele pode ser importado em qualquer dispositivo que tenha o acervo.</p>
-    <p>Se você quiser resetar o progresso, clique no botão "Resetar progresso" na barra lateral. Isso irá apagar todo o seu progresso de leitura.</p>
-    <h3>Sou um autor</h3>
-    <p>Se você é um autor e quer que suas histórias sejam adicionadas ao acervo, entre em contato comigo pelo <a href="https://twitter.com/Lollipop_Raven" target="_blank" color="#b794f6">@Lollipop_Raven</a> no Twitter.</p>
-    <p>Para que suas histórias sejam adicionadas, você precisa me enviar o link da história, o nome do autor e o nome do ship. Se você quiser, você também pode me enviar uma breve descrição da história.</p>
-    <p>Se você quiser que suas histórias sejam removidas do acervo, entre em contato comigo pelo <a href="https://twitter.com/Lollipop_Raven" target="_blank" color="#b794f6">@Lollipop_Raven</a> no Twitter.</p>
-    <h3>Contato</h3>
-    <p>Se você tiver alguma dúvida ou sugestão, entre em contato comigo pelo <a href="https://twitter.com/Lollipop_Raven" target="_blank" color="#b794f6">@Lollipop_Raven</a> no Twitter.</p>
-    <p>Obrigada por visitar o acervo! Espero que você aproveite a experiência!</p>
-    <p>Com carinho, Raven.</p>
-      <img src="wenclair.png" alt="wenclair" class="about-image" style="width: 100%; max-width: 650px; margin-top: 16px; border-radius: 8px;">
-      <br>
-    <a class="back-link" href="index.html">← Voltar ao acervo</a>
-  </section>
+  <header class="page-topbar">
+  </header>
+  
+  <nav class="about-toc" aria-label="Tópicos da página" data-i18n-aria-label="about.topics">
+    <a class="home-link" href="index.html" data-i18n="page.homeTitle">JemmaVerso Archive</a>
+    <a href="#conceito" data-i18n="about.topicConcept">O que é JemmaVerso?</a>
+    <a href="#progresso" data-i18n="about.topicProgress">Progresso de leitura</a>
+    <a href="#autores" data-i18n="about.topicAuthors">Autores</a>
+    <a href="#contato" data-i18n="about.topicContact">Contato</a>
+    <label class="language-control"><span data-i18n="language.label">Idioma</span>
+      <select id="languageSelector" aria-label="Idioma" data-i18n-aria-label="language.label">
+        <option value="pt">Português</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="it">Italiano</option>
+      </select>
+    </label>
+  </nav>
+  <article class="about-content">
+    <header class="about-header">
+      <a class="about-title-link" href="index.html" aria-label="Voltar ao início" data-i18n-aria-label="common.backHome"><h1 data-i18n="about.pageTitle">⋆˖⁺‧₊☽ Sobre o JemmaVerso Archive ☾₊‧⁺˖⋆</h1></a>
+      <p class="about-greeting" data-i18n="about.greeting">Oiie! Raven aqui! Seja muito bem-vindo(a/e) ao JemmaVerso Archive! Primeiramente, gostaria de agradecer cada um dos autores que mantem esse universo vivo e por todo carinho por suas criações.</p>
+    </header>
+
+    <p data-i18n="about.intro1">O JemmaVerso é um acervo dedicado a reunir histórias de diferentes autores, universos e ships em um só lugar. A ideia é facilitar a descoberta de novas leituras e criar um cantinho onde você possa encontrar suas próximas leituras sem precisar ficar procurando por toda parte.</p>
+
+    <p data-i18n="about.intro2">O acervo é atualizado constantemente, então volte quando quiser para conferir alguma novidade!</p>
+
+    <section class="about-section" id="conceito">
+      <h2 data-i18n="about.conceptTitle">✮⋆˙ O que é "JemmaVerso"?</h2>
+      <p data-i18n="about.conceptIntro">Se você caiu de paraquedas, não se preocupe! Aqui vai uma pequena explicação:</p>
+      <p data-i18n="about.conceptDescription">JemmaVerso é um universo de histórias como Fanfics e AU's que envolvem o shipp de Jenna Ortega e Emma Myers.</p>
+
+      <p data-i18n="about.shipExamples">Abaixo há alguns exemplos dos shipps:</p>
+      <ul>
+        <li data-i18n="about.shipWenclair"><b>Wenclair:</b> Wednesday Addams e Enid Sinclair - Obra: Wednesday (2022)</li>
+        <li data-i18n="about.shipSweetcc"><b>Sweetcc:</b> Cairo Sweet e CC Walker - Obra: Miller's Girl e Family Switch</li>
+        <li data-i18n="about.shipPiptara"><b>PipTara:</b> Pippa Fitz-Amobi e Tara Carpenter - Obra: A Good Girl's Guide to Murder e Scream 5/6</li>
+        <li data-i18n="about.shipPipvada"><b>PipVada:</b> Pippa Fitz-Amobi e Vada Cavell - Obra: A Good Girl's Guide to Murder e The Fallout</li>
+      </ul>
+      <p data-i18n="about.moreShips">Existem muitos outros shipps no acervo, então fique à vontade para explorar e descobrir novas combinações!</p>
+
+      <p data-i18n="about.respect"><i><b>Um detalhe importante! Respeito com todos os autores e suas criações são essênciais. Além disso, o respeito com as próprias atrizes é fundamental. Por favor, evite qualquer conteúdo que possa ser ofensivo ou invasivo.</b></i></p>
+    </section>
+
+    <section class="about-section" id="progresso">
+      <h2 data-i18n="about.progressTitle">✮⋆˙ Sobre o progresso de leitura</h2>
+      <p data-i18n="about.progressIntro">Para facilitar sua experiência, o acervo conta com um sistema de salvamento de progresso. Assim, você pode acompanhar quais histórias já começou, onde parou e continuar sua leitura de onde deixou.</p>
+
+      <p data-i18n="about.progressImportant"><strong>Algumas coisinhas importantes:</strong></p>
+      <ul>
+        <li data-i18n="about.progressLocal">Seu progresso é salvo localmente no navegador que você está utilizando.</li>
+        <li data-i18n="about.progressDevice">Se você limpar os dados do navegador ou acessar o acervo por outro dispositivo, suas informações não serão mantidas automaticamente.</li>
+        <li data-i18n="about.progressTransfer">Para transferir seu progresso, basta exportar os dados e importá-los no outro dispositivo.</li>
+      </ul>
+
+      <h3 data-i18n="about.exportTitle">Como exportar ou importar?</h3>
+      <p data-i18n="about.exportDescription">Na barra lateral, você encontrará as opções Exportar progresso e Importar progresso. Ao exportar, será gerado um arquivo JSON contendo suas informações de leitura. Guarde esse arquivo e utilize a opção de importação quando quiser recuperar seu progresso em outro dispositivo.</p>
+
+      <p data-i18n="about.resetDescription">Também existe a opção Resetar progresso, caso queira começar do zero. Atenção: essa ação apagará todos os seus registros de leitura salvos no navegador.</p>
+    </section>
+
+    <section class="about-section" id="autores">
+      <h2 data-i18n="about.authorsTitle">✮⋆˙ Sou autor, posso adicionar minha história?</h2>
+      <p data-i18n="about.authorsIntro">Mas é claro! O JemmaVerso também é um espaço para divulgar o trabalho de outros autores e ajudar suas histórias a encontrarem novos leitores.</p>
+
+      <p data-i18n="about.authorsRequest">Se você tem uma história que gostaria de ver por aqui, pode entrar em contato comigo! Para adicioná-la ao acervo, preciso apenas de:</p>
+      <ul>
+        <li data-i18n="about.storyLink">Link da história;</li>
+        <li data-i18n="about.authorName">Nome do autor;</li>
+        <li data-i18n="about.shipName">Nome do ship.</li>
+      </ul>
+      <p data-i18n="about.optionalSynopsis">Uma sinopse ou breve descrição também é muito bem-vinda, mas não é obrigatória.</p>
+
+      <p data-i18n="about.removal"><i><b>E, caso você seja um autor que já tenha uma história no acervo e queira solicitar sua remoção, é só me chamar também!</b></i></p>
+    </section>
+
+    <section class="about-section about-contact" id="contato">
+      <h2 data-i18n="about.contactTitle">✮⋆˙ Contato</h2>
+      <p data-i18n="about.contactIntro">Encontrou algum problema? Tem alguma sugestão, dúvida ou simplesmente quer conversar sobre o acervo? Minha DM está aberta!</p>
+      <p data-i18n="about.contactMessage">Seja para indicar uma história, solicitar uma alteração ou perguntar qualquer coisinha, pode falar comigo.</p>
+      <a href="https://twitter.com/Lollipop_Raven" target="_blank" rel="noopener noreferrer" class="contact-button" data-i18n="about.contactButton">Ir para DM de Lollipop_Raven</a>
+    </section>
+
+    <footer class="about-footer">
+      <p data-i18n="about.thanks"><strong>Obrigada por fazer parte desse pequeno universo de histórias!</strong></p>
+      <p data-i18n="about.goodbye">Espero que você encontre leituras que te acompanhem para sempre.</p>
+      <p data-i18n="about.withLove">Com carinho,</p>
+      <p class="about-signature"><strong>Raven ♡</strong></p>
+      <img src="wenclair.png" alt="Ilustração de Wenclair" data-i18n-alt="about.imageAlt" class="about-image">
+      <a class="back-link" href="index.html" data-i18n="common.backHome">← Voltar ao acervo</a>
+    </footer>
+  </article>
 </main>
+<script src="translations-extra.js"></script>
+<script src="i18n.js"></script>
 </body>
 </html>

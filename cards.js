@@ -13,12 +13,13 @@ function renderCards(list){
                 <span class="ship">${esc(au.fandom)}</span>
                 <span class="heart">${isFavorite(au.id) ? "♥" : ""}</span>
             </div>
-            <h3>${esc(au.title)}</h3>
-            <p class="author">${esc(au.author.display)}</p>
+            <h3>${esc(translateTitle(au))}</h3>
+            <p class="author">${getAuAuthors(au).map(author => esc(author.display)).join(" · ")}</p>
+            ${au.description ? `<p class="card-synopsis">${esc(translateSynopsis(au))}</p>` : ""}
             <div class="meta">
-                <span class="chip ${statusClass(au.status)}">${esc(au.status)}</span>
-                ${au.size ? `<span class="chip">${esc(au.size)}</span>` : ""}
-                ${read && READ_LABEL[read] ? `<span class="chip read">${READ_LABEL[read]}</span>` : ""}
+                <span class="chip ${statusClass(au.status)}">${esc(translateStatus(au.status))}</span>
+                ${au.size ? `<span class="chip">${esc(translateSize(au.size))}</span>` : ""}
+                ${read && READ_LABEL[read] ? `<span class="chip read">${translateReadingStatus(read)}</span>` : ""}
             </div>
         </article>`;
     }).join("");

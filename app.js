@@ -15,16 +15,24 @@ function openModal(au, visibleAus){
 
 function showAu(au){
     openAu = au;
-    $("modalTitle").textContent = au.title;
-    const handle = au.url ? au.url.split("/")[3] : au.author.name;
-    const a = $("modalAuthor"); a.textContent = au.author.display; a.href = "https://x.com/" + handle;
+    $("modalTitle").textContent = translateTitle(au);
+    const authorLinks = getAuAuthors(au).map(author => {
+        const handle = String(author.name).replace(/^@/, "");
+        return `<a href="https://x.com/${encodeURIComponent(handle)}" target="_blank" rel="noopener">${esc(author.display)}</a>`;
+    });
+    const a = $("modalAuthor");
+    a.innerHTML = authorLinks.join(" · ");
+    a.removeAttribute("href");
     $("mShip").textContent = au.fandom;
-    $("mStatus").textContent = au.status;
-    $("mSize").textContent = au.size || "Não informado";
-    $("modalDescription").textContent = au.description || (au.tweet ? "Sinopse no post original, logo abaixo." : "Sinopse ainda não cadastrada.");
+    $("mStatus").textContent = translateStatus(au.status);
+    $("mSize").textContent = translateSize(au.size || "Não informado");
+    $("modalDescription").textContent = au.description ? translateSynopsis(au) : (au.tweet ? t("synopsisInPost") : t("noSynopsis"));
     $("modalTweet").innerHTML = au.tweet ? `<blockquote class="twitter-tweet" data-theme="dark"><a href="https://twitter.com/i/status/${au.tweet}"></a></blockquote>` : "";
     $("modalLink").style.display = au.url ? "" : "none";
     if (au.url) $("modalLink").href = au.url;
+    $("modalSiteLink").style.display = au.readUrl ? "" : "none";
+    if (au.readUrl) $("modalSiteLink").href = au.readUrl;
+    else $("modalSiteLink").removeAttribute("href");
     updateModalNavigation();
     refreshModal();
     modal.classList.add("active");
@@ -50,7 +58,7 @@ function refreshModal(){
     const id = openAu.id, cur = getReadingStatus(id) || "naolido", rate = getRating(id);
     document.querySelectorAll("#readingButtons .status-btn").forEach(b => b.classList.toggle("active", b.dataset.status === cur));
     document.querySelectorAll("#rating span").forEach(s => s.classList.toggle("active", Number(s.dataset.rate) <= rate));
-    $("modalFav").textContent = isFavorite(id) ? "♥ Favorita" : "♡ Favoritar";
+    $("modalFav").textContent = isFavorite(id) ? t("modal.favorited") : t("modal.favorite");
     $("modalFav").classList.toggle("active", isFavorite(id));
 }
 
@@ -90,7 +98,9 @@ document.addEventListener("keydown", e => {
     if (e.key === "ArrowLeft") navigateModal(-1);
     if (e.key === "ArrowRight") navigateModal(1);
 });
-$("menuBtn").addEventListener("click", () => $("sidebar").classList.toggle("open"));
+$("menuBtn").addEventListener("click", () => toggleSidebar());
+$("closeSidebar").addEventListener("click", () => toggleSidebar(false));
+$("sidebarBackdrop").addEventListener("click", () => toggleSidebar(false));
 
 filterAus();
 updateStatistics();

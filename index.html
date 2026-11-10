@@ -3,65 +3,79 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JemmaVerso Archive</title>
+<title data-i18n="page.homeTitle">JemmaVerso Archive</title>
 <link rel="icon" type="image/png" href="icon.png">
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 <script async src="https://platform.twitter.com/widgets.js"></script>
 </head>
-<body>
-<aside class="sidebar" id="sidebar">
-  <h1 class="brand">JemmaVerso<br>Archive</h1>
+<body class="sidebar-open">
+<button id="sidebarBackdrop" class="sidebar-backdrop" type="button" aria-label="Fechar menu" data-i18n-aria-label="common.closeMenu"></button>
+<aside class="sidebar open" id="sidebar" aria-label="Menu principal" aria-hidden="false">
+  <button id="closeSidebar" class="sidebar-close" type="button" aria-label="Fechar menu" data-i18n-aria-label="common.closeMenu">×</button>
+  <a class="brand" href="index.html" aria-label="JemmaVerso Archive - início">JemmaVerso<br>Archive</a>
 
   <nav class="nav">
-    <button data-view="" class="active">Todas</button>
-    <button data-view="favorites">♥ Favoritas <b id="favoriteCount">0</b></button>
-    <button data-view="lendo">Lendo <b id="readingCount">0</b></button>
-    <button data-view="pausada">Pausadas</button>
-    <button data-view="lido">Concluídas</button>
-    <button data-view="naolido">Não lidas</button>
+    <button data-view="" class="active"><span data-i18n="nav.all">Todas</span></button>
+    <button data-view="favorites"><span data-i18n="nav.favorites">♥ Favoritas</span><b id="favoriteCount">0</b></button>
+    <button data-view="lendo"><span data-i18n="nav.reading">Lendo</span><b id="readingCount">0</b></button>
+    <button data-view="pausada"><span data-i18n="nav.paused">Pausadas</span></button>
+    <button data-view="lido"><span data-i18n="nav.completed">Concluídas</span></button>
+    <button data-view="naolido"><span data-i18n="nav.unread">Não lidas</span></button>
   </nav>
 
   <div class="side-filters">
-    <label>Ship<select id="fandom"><option value="">Todos</option></select></label>
-    <label>Autor<select id="authorFilter"><option value="">Todos</option></select></label>
-    <label>Andamento
+    <label><span data-i18n="filter.ship">Ship</span><select id="fandom"><option value="" data-i18n="filter.all">Todos</option></select></label>
+    <label><span data-i18n="filter.author">Autor</span><select id="authorFilter"><option value="" data-i18n="filter.all">Todos</option></select></label>
+    <label><span data-i18n="filter.publication">Andamento</span>
       <select id="pubStatus">
-        <option value="">Todos</option>
-        <option value="Em andamento">Em andamento</option>
-        <option value="Concluída">Concluída</option>
-        <option value="Não informado">Não informado</option>
+        <option value="" data-i18n="filter.all">Todos</option>
+        <option value="Em andamento" data-i18n="status.ongoing">Em andamento</option>
+        <option value="Concluída" data-i18n="status.completed">Concluída</option>
+        <option value="Não informado" data-i18n="status.unknown">Não informado</option>
       </select>
     </label>
-    <label>Tamanho
+    <label><span data-i18n="filter.size">Tamanho</span>
       <select id="sizeFilter">
-        <option value="">Todos</option>
+        <option value="" data-i18n="filter.all">Todos</option>
         <option>Long</option><option>Short</option><option>One-shot</option>
       </select>
     </label>
-    <button id="clearFilters" class="link-btn">Limpar filtros</button>
+    <label data-trope-filter hidden><span data-i18n="filter.trope">Trope</span>
+      <select id="tropeFilter"><option value="" data-i18n="filter.all">Todos</option></select>
+    </label>
+    <button id="clearFilters" class="link-btn" data-i18n="filter.clear">Limpar filtros</button>
   </div>
 
-  <p class="side-stats"><span id="totalAuthors">0</span> autores no acervo</p>
-  <a class="about-link" href="sobre.html">✦ Sobre o acervo</a>
+  <p class="side-stats"><span id="totalAuthors">0</span> <span data-i18n="archive.authors">autores no acervo</span></p>
+  <div class="sidebar-links">
+    <a class="about-link" href="sobre.html" data-i18n="archive.about">✦ Sobre o acervo</a>
+    <a class="archive-link" href="fanfics.html" data-i18n="archive.fanfics">✦ Acervo de fanfics</a>
+  </div>
+  <label class="language-control"><span data-i18n="language.label">Idioma</span>
+    <select id="languageSelector" aria-label="Idioma" data-i18n-aria-label="language.label">
+      <option value="pt">Português</option><option value="en">English</option><option value="es">Español</option><option value="fr">Français</option><option value="it">Italiano</option>
+    </select>
+  </label>
 </aside>
 
 <main class="content">
   <header class="topbar">
-    <button id="menuBtn" class="menu-btn" aria-label="Menu">☰</button>
-    <input id="search" type="search" placeholder="Buscar por título ou autor...">
-    <span class="count"><b id="totalAus">0</b> AUs</span>
+    <button id="menuBtn" class="menu-btn" type="button" aria-label="Fechar menu" data-i18n-aria-label="common.closeMenu" aria-expanded="true">☰</button>
+    <a class="home-link" href="index.html" data-i18n="page.homeTitle">JemmaVerso Archive</a>
+    <input id="search" type="search" placeholder="Buscar por título ou autor..." data-i18n-placeholder="search.placeholder">
+    <span class="count"><b id="totalAus">0</b> <span data-i18n="archive.aus">AUs</span></span>
   </header>
 
   <section id="cards" class="cards"></section>
-  <p id="empty" class="empty" hidden>Nenhuma AU encontrada com esses filtros.</p>
+  <p id="empty" class="empty" hidden data-i18n="empty.results">Nenhuma AU encontrada com esses filtros.</p>
 </main>
 
 <div id="modal" class="modal">
   <button id="prevAu" class="modal-nav prev" type="button" aria-label="AU anterior">‹</button>
   <button id="nextAu" class="modal-nav next" type="button" aria-label="Próxima AU">›</button>
   <div class="modal-box">
-    <button id="closeModal" class="close" aria-label="Fechar">✕</button>
+    <button id="closeModal" class="close" aria-label="Fechar" data-i18n-aria-label="common.closeMenu">✕</button>
 
     <div class="m-head">
       <h2 id="modalTitle"></h2>
@@ -69,34 +83,38 @@
     </div>
 
     <dl class="m-info">
-      <div><dt>Ship</dt><dd id="mShip"></dd></div>
-      <div><dt>Andamento</dt><dd id="mStatus"></dd></div>
-      <div><dt>Tamanho</dt><dd id="mSize"></dd></div>
+      <div><dt data-i18n="filter.ship">Ship</dt><dd id="mShip"></dd></div>
+      <div><dt data-i18n="filter.publication">Andamento</dt><dd id="mStatus"></dd></div>
+      <div><dt data-i18n="filter.size">Tamanho</dt><dd id="mSize"></dd></div>
     </dl>
 
-    <h4>Sinopse</h4>
+    <h4 data-i18n="modal.synopsis">Sinopse</h4>
     <p id="modalDescription" class="m-desc"></p>
     <div id="modalTweet"></div>
 
-    <h4>Minha leitura</h4>
+    <h4 data-i18n="modal.reading">Minha leitura</h4>
     <div class="reading-status" id="readingButtons">
-      <button class="status-btn" data-status="naolido">Não lida</button>
-      <button class="status-btn" data-status="lendo">Lendo</button>
-      <button class="status-btn" data-status="pausada">Pausada</button>
-      <button class="status-btn" data-status="lido">Concluída</button>
+      <button class="status-btn" data-status="naolido" data-i18n="nav.unread">Não lida</button>
+      <button class="status-btn" data-status="lendo" data-i18n="nav.reading">Lendo</button>
+      <button class="status-btn" data-status="pausada" data-i18n="nav.paused">Pausada</button>
+      <button class="status-btn" data-status="lido" data-i18n="nav.completed">Concluída</button>
     </div>
 
     <div class="m-row">
       <div class="rating" id="rating">
         <span data-rate="1">★</span><span data-rate="2">★</span><span data-rate="3">★</span><span data-rate="4">★</span><span data-rate="5">★</span>
       </div>
-      <button id="modalFav" class="fav-big">♡ Favoritar</button>
-      <a id="modalLink" class="read-btn" target="_blank" rel="noopener">Ler no X ↗</a>
+      <button id="modalFav" class="fav-big" data-i18n="modal.favorite">♡ Favoritar</button>
+      <a id="modalSiteLink" class="read-btn site-read-btn" target="_blank" rel="noopener noreferrer" data-i18n="modal.readSite">Ler no site ↗</a>
+      <a id="modalLink" class="read-btn" target="_blank" rel="noopener" data-i18n="modal.read">Ler no X ↗</a>
     </div>
   </div>
 </div>
 
 <script src="data.js"></script>
+<script src="translations-extra.js"></script>
+<script src="titulo-traducoes.js"></script>
+<script src="i18n.js"></script>
 <script src="storage.js"></script>
 <script src="cards.js"></script>
 <script src="filters.js"></script>

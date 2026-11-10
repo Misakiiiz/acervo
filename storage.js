@@ -159,11 +159,7 @@ function updateStatistics() {
 
     if (totalAuthors) {
 
-        const authors = new Set(
-
-            aus.map(a => a.author.display)
-
-        );
+        const authors = new Set(aus.flatMap(getAuAuthors).map(author => author.display));
 
         totalAuthors.textContent = authors.size;
 
