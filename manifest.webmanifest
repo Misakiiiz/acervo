@@ -1,0 +1,19 @@
+{
+  "id": "./",
+  "name": "JemmaVerso Acervo",
+  "short_name": "JemmaVerso",
+  "description": "Acervo de histórias e AUs do JemmaVerso.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0f0d14",
+  "theme_color": "#0f0d14",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "sizes": "613x613",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

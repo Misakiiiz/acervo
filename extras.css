@@ -109,3 +109,7 @@ img,iframe,video{max-width:100%}
 .eye svg{width:18px;height:18px}
 .aod:not(.collapsed) .eye{position:absolute;top:12px;right:14px}
 .aod.collapsed{padding:8px 14px;flex-wrap:nowrap;align-items:center}
+.install-app-button{display:none;width:100%;font-size:13px;cursor:pointer}
+@media(max-width:800px){
+ .install-app-button:not([hidden]){display:block;grid-column:1/-1}
+}
