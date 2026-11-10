@@ -834,7 +834,7 @@ const aus = [
    "name": "Lollipop_Raven",
    "display": "@Lollipop_Raven"
   },
-  "fandom": "Piptara",
+  "fandom": "PipTara",
   "status": "Em andamento",
   "size": "Long",
   "cover": "",
@@ -870,7 +870,7 @@ const aus = [
    "name": "Lollipop_Raven",
    "display": "@Lollipop_Raven"
   },
-  "fandom": "Piptara",
+  "fandom": "PipTara",
   "status": "Concluída",
   "size": "One-shot",
   "cover": "",
@@ -906,7 +906,7 @@ const aus = [
    "name": "Lollipop_Raven",
    "display": "@Lollipop_Raven"
   },
-  "fandom": "Pipvada",
+  "fandom": "PipVada",
   "status": "Em andamento",
   "size": "One-shot",
   "cover": "",
