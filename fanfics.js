@@ -1,7 +1,11 @@
 const fanficRecommendations = document.getElementById("fanficRecommendations");
 const fanficDialog = document.getElementById("fanficDialog");
+const fanficCarousel = document.querySelector(".fanfic-carousel");
+const fanficCarouselPrevious = document.querySelector(".fanfic-carousel-previous");
+const fanficCarouselNext = document.querySelector(".fanfic-carousel-next");
+const fanficReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
-fanficRecommendations.innerHTML = recommendedFanfics.map((story, index) => `
+const fanficCards = recommendedFanfics.map((story, index) => `
     <article class="fanfic-card">
         <button class="fanfic-card-details" type="button" data-fanfic-index="${index}" aria-haspopup="dialog">
             <img class="fanfic-card-cover" src="${story.cover}" alt="Capa de ${story.title}" loading="lazy">
@@ -12,7 +16,65 @@ fanficRecommendations.innerHTML = recommendedFanfics.map((story, index) => `
         </button>
         <a class="author fanfic-author" href="https://x.com/${encodeURIComponent(story.author.slice(1))}" target="_blank" rel="noopener noreferrer">${story.author}</a>
     </article>
-`).join("");
+`);
+
+const fanficSlides = [];
+for (let index = 0; index < fanficCards.length; index += 2) {
+    fanficSlides.push(`<div class="fanfic-slide">${fanficCards.slice(index, index + 2).join("")}</div>`);
+}
+fanficRecommendations.innerHTML = fanficSlides.join("");
+
+let currentFanficSlide = 0;
+let fanficCarouselTimer;
+const fanficSlideElements = [...fanficRecommendations.children];
+
+function showFanficSlide(index) {
+    currentFanficSlide = (index + fanficSlideElements.length) % fanficSlideElements.length;
+    fanficRecommendations.style.transform = `translateX(-${currentFanficSlide * 100}%)`;
+    fanficSlideElements.forEach((slide, slideIndex) => {
+        slide.setAttribute("aria-hidden", String(slideIndex !== currentFanficSlide));
+        slide.inert = slideIndex !== currentFanficSlide;
+    });
+}
+
+function stopFanficAutoplay() {
+    window.clearInterval(fanficCarouselTimer);
+}
+
+function startFanficAutoplay() {
+    stopFanficAutoplay();
+    if (fanficSlideElements.length > 1 && !fanficReducedMotion.matches && !document.hidden && !fanficDialog.open) {
+        fanficCarouselTimer = window.setInterval(() => {
+            showFanficSlide(currentFanficSlide + 1);
+        }, 5000);
+    }
+}
+
+if (fanficSlideElements.length) {
+    showFanficSlide(0);
+}
+if (fanficSlideElements.length < 2) {
+    fanficCarouselPrevious.hidden = true;
+    fanficCarouselNext.hidden = true;
+} else {
+    fanficCarouselPrevious.addEventListener("click", () => {
+        showFanficSlide(currentFanficSlide - 1);
+        startFanficAutoplay();
+    });
+    fanficCarouselNext.addEventListener("click", () => {
+        showFanficSlide(currentFanficSlide + 1);
+        startFanficAutoplay();
+    });
+    fanficCarousel.addEventListener("mouseenter", stopFanficAutoplay);
+    fanficCarousel.addEventListener("mouseleave", startFanficAutoplay);
+    fanficCarousel.addEventListener("focusin", stopFanficAutoplay);
+    fanficCarousel.addEventListener("focusout", event => {
+        if (!fanficCarousel.contains(event.relatedTarget)) startFanficAutoplay();
+    });
+    document.addEventListener("visibilitychange", startFanficAutoplay);
+    fanficReducedMotion.addEventListener("change", startFanficAutoplay);
+    startFanficAutoplay();
+}
 
 fanficRecommendations.addEventListener("click", event => {
     const button = event.target.closest("[data-fanfic-index]");

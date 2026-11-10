@@ -29,7 +29,13 @@
   </section>
   <section class="fanfic-recommendations" aria-labelledby="recommendationsTitle">
     <h2 id="recommendationsTitle" data-i18n="fanfics.recommendationsTitle">Enquanto você espera, aproveite algumas recomendações:</h2>
-    <div id="fanficRecommendations" class="fanfic-cards"></div>
+    <div class="fanfic-carousel">
+      <button class="fanfic-carousel-arrow fanfic-carousel-previous" type="button" aria-label="Recomendações anteriores">‹</button>
+      <div class="fanfic-carousel-viewport">
+        <div id="fanficRecommendations" class="fanfic-cards" aria-live="off"></div>
+      </div>
+      <button class="fanfic-carousel-arrow fanfic-carousel-next" type="button" aria-label="Próximas recomendações">›</button>
+    </div>
   </section>
 </main>
 <dialog id="fanficDialog" class="fanfic-dialog" aria-labelledby="fanficDialogTitle">

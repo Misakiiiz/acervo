@@ -178,7 +178,16 @@ select:focus,input:focus{border-color:var(--accent)}
 .construction-back:hover{transform:translateY(-2px);background:#8b6bc1}
 .fanfic-recommendations{margin-top:42px}
 .fanfic-recommendations h2{margin-bottom:18px;color:var(--accent);font:600 clamp(19px,3vw,26px)/1.35 Cinzel,serif}
-.fanfic-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.fanfic-carousel{position:relative;padding:0 44px}
+.fanfic-carousel-viewport{overflow:hidden}
+.fanfic-cards{display:flex;transition:transform .45s ease}
+.fanfic-slide{display:grid;flex:0 0 100%;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.fanfic-carousel-arrow{position:absolute;top:50%;z-index:1;display:grid;width:36px;height:36px;place-items:center;transform:translateY(-50%);border:1px solid var(--line);border-radius:50%;background:var(--card);color:var(--text);font-size:27px;line-height:1;cursor:pointer;transition:background .2s,border-color .2s}
+.fanfic-carousel-arrow:hover,.fanfic-carousel-arrow:focus-visible{border-color:var(--accent);background:var(--panel)}
+.fanfic-carousel-arrow:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.fanfic-carousel-previous{left:0}
+.fanfic-carousel-next{right:0}
+.fanfic-carousel-arrow[hidden]{display:none}
 .fanfic-card{overflow:hidden;border:1px solid var(--line);border-radius:14px;background:var(--card);color:var(--text);display:flex;flex-direction:column;transition:transform .15s,border-color .15s}
 .fanfic-card:hover,.fanfic-card:focus-visible{border-color:var(--accent);transform:translateY(-3px)}
 .fanfic-card:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
@@ -204,3 +213,5 @@ select:focus,input:focus{border-color:var(--accent)}
 .sparkle{position:fixed;z-index:30;pointer-events:none;color:#f4d8ff;font-size:13px;text-shadow:0 0 10px #d4a3ff,0 0 22px #b794f6;animation:sparkle-rise .8s ease-out forwards}
 @keyframes sparkle-rise{from{opacity:0;transform:translate(-50%,-30%) scale(.4) rotate(0)}25%{opacity:1}to{opacity:0;transform:translate(calc(-50% + var(--drift)),calc(-50% - 24px)) scale(1.3) rotate(100deg)}}
 @media(max-width:600px){.fanfic-dialog-box{grid-template-columns:1fr;padding:22px}.fanfic-dialog-cover{width:min(220px,70%);margin:0 auto}.fanfic-dialog-copy .read-btn{margin-top:8px}}
+@media(max-width:480px){.fanfic-carousel{padding:0 34px}.fanfic-slide{gap:10px}.fanfic-carousel-arrow{width:30px;height:30px;font-size:23px}.fanfic-card-copy{gap:5px;padding:10px}.fanfic-card-title{font-size:13px}.fanfic-card-synopsis{font-size:11px}.fanfic-card>.fanfic-author{margin:0 10px 10px;font-size:11px}}
+@media(prefers-reduced-motion:reduce){.fanfic-cards{transition:none}}
