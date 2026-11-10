@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wenclair Archive</title>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<script async src="https://platform.twitter.com/widgets.js"></script>
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <h1 class="brand">Wenclair<br>Archive</h1>
+
+  <nav class="nav">
+    <button data-view="" class="active">Todas</button>
+    <button data-view="favorites">♥ Favoritas <b id="favoriteCount">0</b></button>
+    <button data-view="lendo">Lendo <b id="readingCount">0</b></button>
+    <button data-view="pausada">Pausadas</button>
+    <button data-view="lido">Concluídas</button>
+    <button data-view="naolido">Não lidas</button>
+  </nav>
+
+  <div class="side-filters">
+    <label>Ship<select id="fandom"><option value="">Todos</option></select></label>
+    <label>Autor<select id="authorFilter"><option value="">Todos</option></select></label>
+    <label>Andamento
+      <select id="pubStatus">
+        <option value="">Todos</option>
+        <option value="Em andamento">Em andamento</option>
+        <option value="Concluída">Concluída</option>
+        <option value="Não informado">Não informado</option>
+      </select>
+    </label>
+    <label>Tamanho
+      <select id="sizeFilter">
+        <option value="">Todos</option>
+        <option>Long</option><option>Short</option><option>One-shot</option>
+      </select>
+    </label>
+    <button id="clearFilters" class="link-btn">Limpar filtros</button>
+  </div>
+
+  <p class="side-stats"><span id="totalAuthors">0</span> autores no acervo</p>
+</aside>
+
+<main class="content">
+  <header class="topbar">
+    <button id="menuBtn" class="menu-btn" aria-label="Menu">☰</button>
+    <input id="search" type="search" placeholder="Buscar por título ou autor...">
+    <span class="count"><b id="totalAus">0</b> AUs</span>
+  </header>
+
+  <section id="cards" class="cards"></section>
+  <p id="empty" class="empty" hidden>Nenhuma AU encontrada com esses filtros.</p>
+</main>
+
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <button id="closeModal" class="close" aria-label="Fechar">✕</button>
+
+    <div class="m-head">
+      <h2 id="modalTitle"></h2>
+      <a id="modalAuthor" target="_blank" rel="noopener"></a>
+    </div>
+
+    <dl class="m-info">
+      <div><dt>Ship</dt><dd id="mShip"></dd></div>
+      <div><dt>Andamento</dt><dd id="mStatus"></dd></div>
+      <div><dt>Tamanho</dt><dd id="mSize"></dd></div>
+    </dl>
+
+    <h4>Sinopse</h4>
+    <p id="modalDescription" class="m-desc"></p>
+    <div id="modalTweet"></div>
+
+    <h4>Minha leitura</h4>
+    <div class="reading-status" id="readingButtons">
+      <button class="status-btn" data-status="naolido">Não lida</button>
+      <button class="status-btn" data-status="lendo">Lendo</button>
+      <button class="status-btn" data-status="pausada">Pausada</button>
+      <button class="status-btn" data-status="lido">Concluída</button>
+    </div>
+
+    <div class="m-row">
+      <div class="rating" id="rating">
+        <span data-rate="1">★</span><span data-rate="2">★</span><span data-rate="3">★</span><span data-rate="4">★</span><span data-rate="5">★</span>
+      </div>
+      <button id="modalFav" class="fav-big">♡ Favoritar</button>
+      <a id="modalLink" class="read-btn" target="_blank" rel="noopener">Ler no X ↗</a>
+    </div>
+  </div>
+</div>
+
+<script src="data.js"></script>
+<script src="storage.js"></script>
+<script src="cards.js"></script>
+<script src="filters.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
